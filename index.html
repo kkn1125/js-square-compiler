@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rect Compiler</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        & #app {
+          padding: 1rem;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin: 0;
+        }
+
+        h5 {
+          break-before: column;
+        }
+      }
+    </style>
+    <script src="main.js?rect=test" type="module"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Rect Compiler</h1>
+      <div>
+        <h2>Preview</h2>
+        <div
+          style="
+            column-count: 2;
+            column-gap: 5rem;
+            column-rule: 1px dashed black;
+          "
+        >
+          <span id="board"></span>
+          <div>
+            <h3>Playground</h3>
+            <textarea
+              name="playground"
+              id="playground"
+              rows="10"
+              style="width: 100%"
+            ></textarea>
+          </div>
+        </div>
+        <hr />
+        <div
+          style="
+            column-count: 5;
+            column-gap: 5rem;
+            column-rule: 1px dashed black;
+          "
+        >
+          <div>
+            <h5>origin</h5>
+            <textarea
+              name="origin"
+              id="origin"
+              rows="15"
+              style="width: 100%"
+            ></textarea>
+          </div>
+          <div>
+            <h5>lexer</h5>
+            <textarea
+              name="lexer"
+              id="lexer"
+              rows="15"
+              style="width: 100%"
+            ></textarea>
+          </div>
+          <div>
+            <h5>parser</h5>
+            <textarea
+              name="parser"
+              id="parser"
+              rows="15"
+              style="width: 100%"
+            ></textarea>
+          </div>
+          <div>
+            <h5>transformer</h5>
+            <textarea
+              name="transformer"
+              id="transformer"
+              rows="15"
+              style="width: 100%"
+            ></textarea>
+          </div>
+          <div>
+            <h5>generator</h5>
+            <textarea
+              name="generator"
+              id="generator"
+              rows="15"
+              style="width: 100%"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- <element-details-template>
+        <span slot="element-name">Hello!</span>
+        <span slot="description"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+          veniam pariatur recusandae ducimus, rerum odit sit error nostrum
+          expedita impedit, maiores, neque qui molestiae necessitatibus voluptas
+          doloremque minus ipsa quidem?</span
+        >
+        <span slot="attributes">
+          <p>good</p>
+          <p>good2</p>
+        </span>
+      </element-details-template> -->
+    </div>
+  </body>
+</html>

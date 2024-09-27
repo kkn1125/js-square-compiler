@@ -1,0 +1,17 @@
+paper 0 200 200
+pen 55
+
+relative 50 50
+
+line 0 0 100 0
+line 100 0 100 100
+line 100 100 0 100
+line 0 100 0 0
+
+
+circle 0 0 5
+circle 100 0 5
+circle 100 100 5
+circle 0 100 5
+circle 50 50 5
+
